@@ -1,5 +1,8 @@
 # MasterThesis | Unity 2020.3.2f1
 My master thesis for my Master's in Information Technology.
+The goal of this project is to simulate in Unity an AI Agent that has human-like needs.
+
+![Maslow's hierarchy of needs](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Expanded_Maslow%27s_Needs.webp/593px-Expanded_Maslow%27s_Needs.webp.png)
 
 ## Main menu
 ![unknown_2022 06 09-17 52](https://user-images.githubusercontent.com/73944749/172877839-03b0433d-0ce7-4c95-a819-e8ded5fbdaf5.gif)
