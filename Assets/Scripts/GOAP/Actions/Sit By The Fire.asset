@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc7888c24685a3f4c9c718e7f1734f7e, type: 3}
+  m_Name: Sit By The Fire
+  m_EditorClassIdentifier: 
+  ActionParams:
+    Name: Sit By The Flame
+    TargetTag: Fire
+    LivingTarget: 0
+    ActionRange: 3.5
+    Cost: 1
+    Duration: 3
+    AnimParams:
+      Animation: SitDown
+      DefaultAnimation: 
+      Duration: 3
+      Loop: 0
+    HoldItemPrefab: {fileID: 0}
+    DestroyTargetAfterComplete: 0
+  NavigationParams:
+    NavigationSpeed: 3.5
+    CostFactor: 3.5
+    AnimParams:
+      Animation: Walk
+      DefaultAnimation: 
+      Duration: 3
+      Loop: 1
+  Conditions:
+  - Key: IsStanding
+    Value: 1
+    IsPersistent: 0
+  Effects:
+  - Key: IsSitting
+    Value: 1
+    IsPersistent: 1
+  - Key: IsStanding
+    Value: -1
+    IsPersistent: 1

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98edc1109505654dae41151b31ee6a7, type: 3}
+  m_Name: VillagerAttack
+  m_EditorClassIdentifier: 
+  ActionParams:
+    Name: Attack
+    TargetTag: Enemy
+    LivingTarget: 1
+    ActionRange: 2
+    Cost: 1
+    Duration: 1
+    AnimParams:
+      Animation: Attack
+      DefaultAnimation: Idle
+      Duration: 1
+      Loop: 0
+  NavigationParams:
+    NavigationSpeed: 3.5
+    CostFactor: 3.5
+    AnimParams:
+      Animation: Walk
+      DefaultAnimation: Idle
+      Duration: 3
+      Loop: 1
+  Conditions: []
+  Effects:
+  - Key: KillEnemy
+    Value: 1
+    IsPersistent: 0
+  damage: 25
